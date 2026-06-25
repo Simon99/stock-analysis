@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>電力類股 主題分析</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,'Segoe UI','Microsoft JhengHei',sans-serif;background:#0f1117;color:#e6e8ee;line-height:1.6;padding:24px;max-width:1000px;margin:0 auto}
+a{color:#5ab0ff}h1{font-size:28px}.tag{color:#8b93a7;font-size:14px;margin:4px 0 20px}
+.verdict{background:linear-gradient(135deg,#1a2030,#161b28);border:1px solid #2a3350;border-radius:14px;padding:20px;margin-bottom:24px}
+.verdict h2{font-size:20px;color:#ffd479;margin-bottom:8px}.verdict .sub{color:#aeb6c8;font-size:14px}
+.trig{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}.trig div{flex:1;min-width:240px;background:#11151f;border-radius:10px;padding:12px;font-size:13px}
+.trig .pos{border-left:3px solid #3fb950}.trig .neg{border-left:3px solid #f85149}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.card{background:#161b28;border:1px solid #232a3d;border-radius:12px;padding:16px}
+.card h3{font-size:15px;margin-bottom:8px}.card .v{font-size:13px;color:#c4cad8;margin-bottom:8px}.card .read{font-size:13px;color:#8b93a7;font-style:italic}
+.badge{float:right;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600}
+.good{background:#16331f;color:#3fb950}.warn{background:#332b16;color:#d9a441}.bad{background:#3a1d1d;color:#f85149}
+.sec{background:#161b28;border:1px solid #232a3d;border-radius:12px;padding:18px;margin-bottom:18px}.sec h3{margin-bottom:10px;font-size:16px}
+.chartbox{background:#161b28;border:1px solid #232a3d;border-radius:12px;padding:18px;margin-bottom:18px}
+ul{margin-left:18px}.foot{font-size:12px;color:#5a627a;margin-top:24px;border-top:1px solid #232a3d;padding-top:12px}.back{font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:4px 0}th,td{padding:8px 9px;text-align:left;border-bottom:1px solid #232a3d}th{color:#8b93a7;font-weight:600}td{color:#c4cad8}
+.orbox{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.orbox div{flex:1;min-width:240px;border-radius:10px;padding:14px;font-size:13px}
+.orbox .opp{background:#11211a;border-left:3px solid #3fb950}.orbox .rsk{background:#21110f;border-left:3px solid #f85149}</style><script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script></head>
+<body><a class="back" href="index.html">← 回名單</a>
+<h1>電力類股 <span style="color:#8b93a7;font-size:18px">主題</span></h1><div class="tag">AI 電力需求·AI鏈最下游、最實體</div>
+<div class="verdict"><h2>「AI 用電暴增,瓶頸從晶片轉到電力」</h2><div class="sub">AI datacenter 用電結構性暴增(美國 19GW 2023→35GW 2030;AI 用電 2034 達 1600 TWh、約 <b>4 倍</b>),<b>瓶頸從晶片轉到電力</b> → 發電/電網/核能/SMR 受惠。這是 AI 鏈最下游、最「實體」的一環,<b>實質需求驅動、估值相對合理(fPE 13-20)</b>。但新核電/SMR 供給要 2029-2030+ 才實質到位(遠水救近火)。</div></div>
+<div class="sec"><h3>成分股比較</h3><table><tr><th>代號</th><th>名稱</th><th>定位</th><th>市值</th><th>營收YoY</th><th>估值</th><th>近6月</th><th>一句話</th></tr><tr><td><b>VST</b></td><td>Vistra</td><td>IPP發電(核+氣)</td><td>55B</td><td>+43%</td><td>fPE15</td><td style="color:#3fb950">+1%</td><td style="color:#8b93a7">估值最合理的IPP</td></tr><tr><td><b>CEG</b></td><td>Constellation</td><td>核能IPP龍頭</td><td>96B</td><td>+64%</td><td>fPE20</td><td style="color:#f85149">-25%</td><td style="color:#8b93a7">龍頭但近期回檔</td></tr><tr><td><b>GEV</b></td><td>GE Vernova</td><td>電力設備+SMR</td><td>284B</td><td>+16%</td><td>fPE43</td><td style="color:#3fb950">+60%</td><td style="color:#8b93a7">漲最多最貴,設備+核能雙引擎</td></tr><tr><td><b>TLN</b></td><td>Talen</td><td>核能IPP</td><td>19B</td><td>+97%</td><td>fPE14</td><td style="color:#3fb950">+7%</td><td style="color:#8b93a7">營收爆發、fPE最低但仍虧損</td></tr><tr><td><b>OKLO</b></td><td>Oklo</td><td>SMR新創</td><td>9B</td><td>無營收</td><td>—</td><td style="color:#f85149">-35%</td><td style="color:#8b93a7">純題材投機,無營收高波動</td></tr></table>
+<div style="font-size:12px;color:#5a627a;margin-top:8px">市值=美元;估值 fPE=預估本益比、PE=本益比;近6月=股價報酬。</div></div>
+<div class="chartbox"><h3>成分股 營收 YoY 比較(%)</h3><canvas id="c"></canvas></div>
+<div class="orbox"><div class="opp"><b>↗ 機會</b><br>AI capex 2030 達 $7兆、用電結構性成長、核能/SMR 政策順風、IPP 電價上漲。</div><div class="rsk"><b>↘ 風險</b><br>新核電供給遠水(2029+)、估值已部分反映(GEV fPE43)、資本密集對利率敏感、波動大(CEG 近半年-25%)。</div></div>
+<div class="sec"><h3>【供應鏈定位】</h3><p style="font-size:14px;color:#c4cad8">AI 運算鏈<b>[基礎設施/電力]最下游</b>。AI 伺服器(NVDA→台積電→緯創/台達)部署 → datacenter 用電暴增 → 這群發電/電網/核能受惠。是整條鏈「最後一哩」的實體瓶頸。</p></div>
+<div class="foot">Sources: <a href="https://finance.yahoo.com/news/3-nuclear-power-stocks-set-132100209.html">Nuclear stocks AI boom (Yahoo)</a> · <a href="https://247wallst.com/investing/2026/04/18/nuclears-ai-moment-is-here-there-is-only-1-play-for-the-4x-data-center-demand-explosion/">Nuclear AI moment (247WallSt)</a><br>主題=一籃子代表成分股,非完整清單。決策支援分析,非投資建議。</div>
+<script>new Chart(document.getElementById('c'),{type:'bar',data:{labels:["VST", "CEG", "GEV", "TLN", "OKLO"],datasets:[{data:[43, 64, 16, 97, 0],backgroundColor:["#3fb950", "#3fb950", "#3fb950", "#3fb950", "#f85149"]}]},
+options:{plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#aeb6c8'}},y:{ticks:{color:'#5a627a',callback:function(v){return v+'%'}}}}});</script></body></html>
