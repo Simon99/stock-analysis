@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究方法與紀律</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,'Segoe UI','Microsoft JhengHei',sans-serif;background:#0f1117;color:#e6e8ee;line-height:1.6;padding:24px;max-width:1000px;margin:0 auto}
+a{color:#5ab0ff}h1{font-size:28px}.tag{color:#8b93a7;font-size:14px;margin:4px 0 20px}
+.verdict{background:linear-gradient(135deg,#1a2030,#161b28);border:1px solid #2a3350;border-radius:14px;padding:20px;margin-bottom:24px}
+.verdict h2{font-size:20px;color:#ffd479;margin-bottom:8px}.verdict .sub{color:#aeb6c8;font-size:14px}
+.trig{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}.trig div{flex:1;min-width:240px;background:#11151f;border-radius:10px;padding:12px;font-size:13px}
+.trig .pos{border-left:3px solid #3fb950}.trig .neg{border-left:3px solid #f85149}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.card{background:#161b28;border:1px solid #232a3d;border-radius:12px;padding:16px}
+.card h3{font-size:15px;margin-bottom:8px}.card .v{font-size:13px;color:#c4cad8;margin-bottom:8px}.card .read{font-size:13px;color:#8b93a7;font-style:italic}
+.badge{float:right;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600}
+.good{background:#16331f;color:#3fb950}.warn{background:#332b16;color:#d9a441}.bad{background:#3a1d1d;color:#f85149}
+.sec{background:#161b28;border:1px solid #232a3d;border-radius:12px;padding:18px;margin-bottom:18px}.sec h3{margin-bottom:10px;font-size:16px}
+.chartbox{background:#161b28;border:1px solid #232a3d;border-radius:12px;padding:18px;margin-bottom:18px}
+ul{margin-left:18px}.foot{font-size:12px;color:#5a627a;margin-top:24px;border-top:1px solid #232a3d;padding-top:12px}.back{font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:4px 0}th,td{padding:8px 9px;text-align:left;border-bottom:1px solid #232a3d}th{color:#8b93a7;font-weight:600}td{color:#c4cad8}
+.orbox{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.orbox div{flex:1;min-width:240px;border-radius:10px;padding:14px;font-size:13px}
+.orbox .opp{background:#11211a;border-left:3px solid #3fb950}.orbox .rsk{background:#21110f;border-left:3px solid #f85149}
+.panel{background:#131824;border:1px solid #2a3350;border-radius:12px;padding:14px 16px;margin-bottom:20px}.ptitle{font-size:12px;color:#8b93a7;margin-bottom:10px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}.tile{background:#0f1420;border-radius:8px;padding:7px 10px;display:flex;flex-direction:column}
+.pl{font-size:11px;color:#5a627a}.pv{font-size:15px;color:#e6e8ee;font-weight:600}.pos{color:#3fb950}.neg{color:#f85149}</style></head>
+<body><a class="back" href="index.html">← 投資分析總覽</a>
+<h1>研究方法與紀律</h1><div class="tag">這個站的每一句判讀都建立在這套方法上。核心一句話:<b>用證據分清 edge(真優勢)與 echo(二次傳播/跟風)</b>。</div>
+<div class="verdict"><h2>「唯一實證穩健的 edge = 超賣均值回歸」</h2><div class="sub">大型股<b>跌破 MA20 ≥ 10% 且站上年線(MA200)</b> → 隔日開盤買。跨多個市場 regime 都有效(permutation test p≈0),是我們回測後唯一敢用的訊號。反面:追動能 melt-up 賠率最差、中型股接刀會死。</div></div>
+<div class="sec"><h3>✅ 被證據支持的</h3><ul style="font-size:14px;color:#c4cad8">
+<li><b>超賣均值回歸</b>=唯一穩健 edge(大型股、跌破MA20≥10%且站年線;跨 regime,p≈0)。</li>
+<li><b>Core-Satellite 配置</b>:0050 核心 + 超賣衛星 + 年線濾網;現金閒置就抱 0050 吃 beta,別為「做事」硬進場。</li>
+<li><b>估值是「果」不是「因」</b>:用來看賠率、不當買賣訊號;好公司 ≠ 好價格。</li>
+</ul></div>
+<div class="sec"><h3>❌ 被證偽 / 賠率差的(常見 echo)</h3><ul style="font-size:14px;color:#c4cad8">
+<li><b>跟籌碼買(投信/外資買賣超)= beta 陷阱</b>,無 alpha(permutation p≈0.68)。單獨照抄無效。</li>
+<li><b>追動能 / 追高 melt-up</b> = 賠率最差區;<b>中型股接刀會死</b>(survivorship bias 驗證過)。</li>
+<li><b>「這次不一樣」的循環頂敘事</b>:景氣循環股(記憶體最典型)在高峰,公司說法與分析師上修的模式幾乎都一樣——股癌 EP630 親口警告過。</li>
+</ul></div>
+<div class="sec"><h3>🧪 防過度配適(anti-overfit)的做法</h3><ul style="font-size:14px;color:#c4cad8">
+<li>時間切 IS / VAL / HOLDOUT,加 walk-forward;不看單一 peak、只認 <b>plateau</b>(參數平原)。</li>
+<li>一律含<b>交易成本</b>(手續費 0.1425% + 證交稅 + 滑價)、<b>T+1</b> 進場、cross-sectional 一致性。</li>
+<li><b>permutation test</b>:把報酬洗牌,看策略是否還「贏得過隨機」——分清真訊號與過擬合。</li>
+</ul></div>
+<div class="sec"><h3>🧭 操作紀律</h3><ul style="font-size:14px;color:#c4cad8">
+<li>單檔 ≤ 20% 部位、<b>-12% 停損</b>、漲回 MA20 或持有 20 日出場。</li>
+<li>信「產業趨勢對」≠「此刻股價賠率好」——趨勢與位階是兩件事。</li>
+</ul></div>
+<div class="sec"><h3>🔍 edge vs echo 這把尺,量過誰</h3><p style="font-size:14px;color:#c4cad8">股癌 12 個重大議題裡 9 個是跟風(晚新聞數週到 8 個月);Threads 網紅多為二次傳播、且推的「上游小股」正是股癌自己警告的 Trade RD Project;群聯/記憶體 CEO 訪談的超級循環論扎實但 talking his book(利益綁定極深)。<b>同一把尺:先問這是真 edge,還是 echo。</b></p></div>
+<div class="foot">回測方法與結論為本站自有研究 · 決策支援,非投資建議。</div></body></html>
